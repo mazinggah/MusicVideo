@@ -14,6 +14,7 @@
 		7A3014F91C765FCF0007E32A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A3014F71C765FCF0007E32A /* LaunchScreen.storyboard */; };
 		7A3015041C765FCF0007E32A /* MusicVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3015031C765FCF0007E32A /* MusicVideoTests.swift */; };
 		7A30150F1C765FCF0007E32A /* MusicVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A30150E1C765FCF0007E32A /* MusicVideoUITests.swift */; };
+		7A70B0A21C8777C60091CD8D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B0A11C8777C60091CD8D /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7A30150A1C765FCF0007E32A /* MusicVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A30150E1C765FCF0007E32A /* MusicVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoUITests.swift; sourceTree = "<group>"; };
 		7A3015101C765FCF0007E32A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A70B0A11C8777C60091CD8D /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		7A30151C1C7666850007E32A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7A70B0A11C8777C60091CD8D /* APIManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A70B0A21C8777C60091CD8D /* APIManager.swift in Sources */,
 				7A3014F11C765FCF0007E32A /* ViewController.swift in Sources */,
 				7A3014EF1C765FCF0007E32A /* AppDelegate.swift in Sources */,
 			);
@@ -516,6 +520,7 @@
 				7A3015151C765FCF0007E32A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A3015161C765FCF0007E32A /* Build configuration list for PBXNativeTarget "MusicVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +529,7 @@
 				7A3015181C765FCF0007E32A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A3015191C765FCF0007E32A /* Build configuration list for PBXNativeTarget "MusicVideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +538,7 @@
 				7A30151B1C765FCF0007E32A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -16,6 +16,7 @@
 		7A30150F1C765FCF0007E32A /* MusicVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A30150E1C765FCF0007E32A /* MusicVideoUITests.swift */; };
 		7A551B941C879F7800F9BD1C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A551B931C879F7800F9BD1C /* Constants.swift */; };
 		7A551B961C87A13600F9BD1C /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A551B951C87A13600F9BD1C /* MusicVideo.swift */; };
+		7A551B9B1C8FD59B00F9BD1C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A551B9A1C8FD59B00F9BD1C /* Reachability.m */; };
 		7A70B0A21C8777C60091CD8D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B0A11C8777C60091CD8D /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,9 @@
 		7A3015101C765FCF0007E32A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A551B931C879F7800F9BD1C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7A551B951C87A13600F9BD1C /* MusicVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
+		7A551B981C8FD57400F9BD1C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		7A551B991C8FD59B00F9BD1C /* MusicVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicVideo-Bridging-Header.h"; sourceTree = "<group>"; };
+		7A551B9A1C8FD59B00F9BD1C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		7A70B0A11C8777C60091CD8D /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +107,7 @@
 		7A3014ED1C765FCF0007E32A /* MusicVideo */ = {
 			isa = PBXGroup;
 			children = (
+				7A551B971C8FD44700F9BD1C /* Obj-c */,
 				7A551B921C879F1900F9BD1C /* Utils */,
 				7A30151F1C7666BF0007E32A /* Supporting Files */,
 				7A30151C1C7666850007E32A /* Model */,
@@ -172,6 +177,16 @@
 				7A551B931C879F7800F9BD1C /* Constants.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		7A551B971C8FD44700F9BD1C /* Obj-c */ = {
+			isa = PBXGroup;
+			children = (
+				7A551B981C8FD57400F9BD1C /* Reachability.h */,
+				7A551B9A1C8FD59B00F9BD1C /* Reachability.m */,
+				7A551B991C8FD59B00F9BD1C /* MusicVideo-Bridging-Header.h */,
+			);
+			name = "Obj-c";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +324,7 @@
 				7A3014F11C765FCF0007E32A /* ViewController.swift in Sources */,
 				7A551B961C87A13600F9BD1C /* MusicVideo.swift in Sources */,
 				7A3014EF1C765FCF0007E32A /* AppDelegate.swift in Sources */,
+				7A551B9B1C8FD59B00F9BD1C /* Reachability.m in Sources */,
 				7A551B941C879F7800F9BD1C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,10 +467,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MusicVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jongwoolee.MusicVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicVideo/MusicVideo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -462,10 +481,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MusicVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jongwoolee.MusicVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicVideo/MusicVideo-Bridging-Header.h";
 			};
 			name = Release;
 		};
